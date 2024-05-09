@@ -5,11 +5,11 @@ import requests
 
 offset = 0.01
 
-# balade avec les filles et Mariel 
+# debut balade avec les filles et Mariel 
 longitude = 17.11304
 latitude = -24.99131
 
-# longue balade avec Noemie geo:17.187975,-25.104049;crs=wgs84;u=0
+# debut longue balade avec Noemie
 longitude = 17.187975
 latitude = -25.104049
 
