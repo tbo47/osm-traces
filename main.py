@@ -19,6 +19,9 @@ print(
 
 
 def loadGPX(gpxfile, page=0):
+    """ Load GPX file from OpenStreetMap API
+    It contains trackpoints of a GPS traces.
+    """
     bbox = ",".join(
         [
             str(latitude - offset),
@@ -34,6 +37,9 @@ def loadGPX(gpxfile, page=0):
 
 
 def parseGPX(gpxfile, page=0):
+    """ Parse GPX file and find traces left by users
+    It contains up to 5000 trackpoints. If there are more than 5000 trackpoints, we will need to load the next page.
+    """
     f = open(f"{page}-{gpxfile}", "r")
     trkpt_count = 0
     for x in f:
