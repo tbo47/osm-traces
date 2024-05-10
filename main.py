@@ -5,7 +5,7 @@ import requests
 
 offset = 0.01
 
-# debut balade avec les filles et Mariel 
+# debut balade avec les filles et Mariel
 longitude = 17.11304
 latitude = -24.99131
 
@@ -19,7 +19,7 @@ print(
 
 
 def loadGPX(gpxfile, page=0):
-    """ Load GPX file from OpenStreetMap API
+    """Load GPX file from OpenStreetMap API
     It contains trackpoints of a GPS traces.
     """
     bbox = ",".join(
@@ -37,7 +37,7 @@ def loadGPX(gpxfile, page=0):
 
 
 def parseGPX(gpxfile, page=0):
-    """ Parse GPX file and find traces left by users
+    """Parse GPX file and find traces left by users
     It contains up to 5000 trackpoints. If there are more than 5000 trackpoints, we will need to load the next page.
     """
     f = open(f"{page}-{gpxfile}", "r")
